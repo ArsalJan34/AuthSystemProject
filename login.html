@@ -11,7 +11,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
   <script src="firebase.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="login.js"></script>
+
 </head>
 
 <body>
@@ -34,15 +34,17 @@
 <i class='bx bx-lock-alt'></i>
     </div>
    <div class="remember-me">
+    <!-- and also forgot password here is too -->
     <label>
       Remember Me
       <input type="checkbox" id="remember">
     </label>
+    <a href="" id="forgotpassword">Forgot Password?</a>
    </div>
     <button onclick="login()">Login</button>
     <p>Don't have an account? <a href="index.html">Signup</a></p>
   </div>
 </section>
 </body>
-
+  <script src="login.js"></script>
 </html>

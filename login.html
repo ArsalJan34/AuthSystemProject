@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="login.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <button onclick="GoBack()"><i class='bx bx-arrow-back'></i></button>
+    <div class="logo"> <i class='bx bxs-color'></i>Ultrizly</div>
+  </header>
+  <section class="home">
+  <div class="loginForm">
+    <h2>Welcome Back</h2>
+    <p>Login to view daily Updates</p>
+    <h3>Email</h3>
+    <div class="input-with-icon">
+      <input type="email" placeholder="Email" id="email">
+      <i class='bx bx-envelope'></i>
+  </div>
+      <div class="input-with-icon2">
+    <h3>Password</h3>
+    <input type="password" id="password" placeholder="Password">
+<i class='bx bx-lock-alt'></i>
+    </div>
+   <div class="remember-me">
+    <label>
+      Remember Me
+      <input type="checkbox" id="remember">
+    </label>
+   </div>
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <a href="index.html">Signup</a></p>
+  </div>
+</section>
+</body>
+
+</html>

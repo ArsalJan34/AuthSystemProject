@@ -244,3 +244,29 @@ justify-content: space-between;
   cursor: pointer;
   gap: 5px;
 }
+@media (max-width: 480px) {
+
+  .header {
+    padding: 8px;
+  }
+
+  .header .logo,
+  .header .bx {
+    font-size: 22px;
+  }
+
+  .header button {
+    width: 42px;
+    height: 42px;
+  }
+    .loginForm {
+      width: 90%;
+      max-width: 500px;
+      min-height: auto;
+      margin: 50px auto;
+      padding: 40px 20px;
+        box-shadow: none;
+          background-color: transparent;
+      border: none;
+    }
+}

@@ -42,6 +42,9 @@ function signup(){
       isAdmin: false
     });
   })
-
-
-}
+        .then(() => {
+          alert('Signup successful!');
+          window.location.href = 'login.html';
+        })
+        .catch(err => alert(err.message));
+    }

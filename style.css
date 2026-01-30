@@ -429,3 +429,15 @@ object-fit: cover;
   color: var(--color-text-muted);
 }
   }
+.loginForm .google-btn {
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

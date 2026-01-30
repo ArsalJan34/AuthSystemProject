@@ -48,3 +48,27 @@ function signup(){
         })
         .catch(err => alert(err.message));
     }
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+function googleAuth() {
+  auth.signInWithPopup(provider)
+    .then(result => {
+      const user = result.user;
+
+      // Save user in Firestore (only if new)
+      return db.collection("AuthProjectUsers")
+        .doc(user.uid)
+        .set({
+          name: user.displayName,
+          email: user.email,
+          isAdmin: false,
+          provider: "google"
+        }, { merge: true });
+    })
+    .then(() => {
+      window.location.href = "dashboard.html";
+    })
+    .catch(err => {
+      alert(err.message);
+    });
+}

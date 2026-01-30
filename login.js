@@ -12,7 +12,7 @@
               if (doc.exists && doc.data().isAdmin === true) {
                 window.location.href = "admin.html";
               } else {
-                window.location.href = "store.html";
+                window.location.href = "dashboard.html";
               }
             });
         })

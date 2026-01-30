@@ -72,6 +72,39 @@ body::before {
 
 
 }
+.bg-dashboard {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.6;
+
+  /* Background Image */
+  background-image: url("./images/bg\ dashboard.jpg");
+  /* Replace with your image path */
+  background-size: cover;
+  /* Cover entire screen */
+  background-position: center;
+  /* Centered image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Parallax effect */
+
+  /* Optional overlay to darken the image for readability */
+  position: relative;
+}
+.bg-dashboard::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Dark overlay */
+  z-index: -1;
+  /* Behind all content */
+
+
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -111,7 +144,9 @@ display: flex;
   /* vertical center */
   min-height: 100vh;
   /* full viewport height */
+
 }
+
 .loginForm {
     width: 90%;
       max-width: 500px;
@@ -244,6 +279,52 @@ justify-content: space-between;
   cursor: pointer;
   gap: 5px;
 }
+/* dashboard css */
+.dashboard-home {
+  display: flex;
+  justify-content: left;
+  /* horizontal center */
+  align-items: center;
+  /* vertical center */
+  min-height: 100vh;
+  /* full viewport height */
+  margin: 0 0 0 50px;
+}
+.images img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+object-fit: cover;
+  border: 2px solid #000;
+  /* separates images cleanly */
+  margin-left: -15px;
+  /* overlap amount */
+}
+.customers {
+  display: flex;
+  align-items: center;
+
+}
+.customers span{
+  background-color: var(--color-bg-alt);
+  border: none;
+  border-radius: 50px;
+  padding: 5px 5px;
+}
+.customers p{
+  margin-left: 5px;
+}
+.home-content h2 a{
+  color: var(--color-primary-hover);
+}
+.home-content h2{
+  font-size: 40px;
+  max-width: 400px;
+}
+.home-content p{
+  font-size: 20px;
+  color: var(--color-text-muted);
+}
 @media (max-width: 480px) {
 
   .header {
@@ -269,4 +350,14 @@ justify-content: space-between;
           background-color: transparent;
       border: none;
     }
-}
+        .dashboard-home {
+          display: flex;
+          justify-content: left;
+          /* horizontal center */
+          align-items: center;
+          /* vertical center */
+          min-height: 100vh;
+          /* full viewport height */
+          margin: 0 0 0 50px;
+        }
+  }

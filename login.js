@@ -7,7 +7,7 @@
         .then((cred) => {
           console.log("Logged in:", cred.user.email);
 
-          db.collection('BakeryCustomers').doc(cred.user.uid).get()
+          db.collection('AuthProjectUsers').doc(cred.user.uid).get()
             .then(doc => {
               if (doc.exists && doc.data().isAdmin === true) {
                 window.location.href = "admin.html";

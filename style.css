@@ -72,39 +72,7 @@ body::before {
 
 
 }
-.bg-dashboard {
-  font-family: var(--font-family);
-  font-size: var(--font-size-base);
-  color: var(--color-text);
-  line-height: 1.6;
 
-  /* Background Image */
-  background-image: url("./images/bg\ dashboard.jpg");
-  /* Replace with your image path */
-  background-size: cover;
-  /* Cover entire screen */
-  background-position: center;
-  /* Centered image */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* Parallax effect */
-
-  /* Optional overlay to darken the image for readability */
-  position: relative;
-}
-.bg-dashboard::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Dark overlay */
-  z-index: -1;
-  /* Behind all content */
-
-
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -280,6 +248,40 @@ justify-content: space-between;
   gap: 5px;
 }
 /* dashboard css */
+.bg-dashboard {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.6;
+
+  /* Background Image */
+  background-image: url("./images/bg\ dashboard.jpg");
+  /* Replace with your image path */
+  background-size: cover;
+  /* Cover entire screen */
+  background-position: center;
+  /* Centered image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Parallax effect */
+
+  /* Optional overlay to darken the image for readability */
+  position: relative;
+}
+
+.bg-dashboard::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Dark overlay */
+  z-index: -1;
+  /* Behind all content */
+
+
+}
 .dashboard-home {
   display: flex;
   justify-content: left;
